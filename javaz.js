@@ -1,26 +1,21 @@
 $(document).ready(function(){
   $('.readmore').click(function(event){
-	event.preventDefault();
-}); 
-  $(".readmore").click(function(){ 
-      $(".hide").slideDown();
-        $(".readmore").hide();
-    });
-$('.readless').click(function(event){
-	event.preventDefault();
-});
-    $(".readless").click(function(){
-        $(".hide").slideUp();
-        $(".readless").hide();
-      $(".readmore").show()
-    });
-$('.learnmore').click(function(event){
-	event.preventDefault();
-});
-     $(".hide2").hide();
-    $(".learnmore").click(function(){
-        $(".hide2").slideDown();
-        $(".learnmore").hide();
-    });
+	 event.preventDefault();
+    $(".hide").slideDown();
+    $(".readmore").hide();
+  }); 
+
+  $('.readless').click(function(event){
+  	event.preventDefault();
+    $(".hide").slideUp();
+    $(".readless").hide();
+    $(".readmore").show()
+  });
+  $('.learnmore').click(function(event){
+	 event.preventDefault();
+    $(".hide2").hide();
+    $(".hide2").slideDown();
+    $(".learnmore").hide();
+  });
 }); 
    
